@@ -22,7 +22,7 @@
         }
         .nav-container {
             height: 150px;
-            border: 1px solid slateblue;
+            /* border: 1px solid slateblue; */
             display: flex;
             
             
@@ -45,19 +45,61 @@
         }
         .contents {
             display: flex;
+            height: 370px;
+            
         }
         .tag-line {
             width: 50%;
-            margin: 100px 100px;
+            margin: 100px 50px;
         }
         .tag-line h1 {
             font-size: 50px;
             
         }
         .tag-line h2 {
-            font-size: 100px;
+            font-size: 90px;
             letter-spacing: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+        .tag-line p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(96, 91, 91);
+        }
+        .navigation li:hover {
+            color: rgb(230, 184, 73);
+        }
+        .btn {
+            width: 170px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: rgb(24, 9, 78);
+            color: white;
+            margin-left: 46px;
+            
+        }
+        .btn button:hover {
+            background-color: rgb(230, 184, 73);
+        }
+        .left-arrow {
+            border-radius: 50%;
+            color: rgb(230, 184, 73);
+            height: 50px;
+            width: 50px;
+            border: 1px solid rgb(230, 184, 73);
+            margin-left: 50px;
+
+        }
+        .right-arrow {
+            border-radius: 50%;
+            color: rgb(230, 184, 73);
+            height: 50px;
+            width: 50px;
+            border: 1px solid rgb(230, 184, 73);
+            
+
+        }
+        
+
     </style>
 </head>
 <body>
@@ -78,10 +120,13 @@
                 <div class="tag-line">
                 <h1 style="color: rgb(230, 184, 73);">Progress & Success</h1>
                 <h2>currency</h2>
-                <p>It is a long established fact that a reader will be distracted by the readable It is a long established fact that a reader will be distracted by the readable</p>
+                <p style="font-size: 20px;">It is a long established fact that a reader will be distracted by the readable It is a long established fact that a reader will be distracted by the readable</p>
             </div>
                 <img src="./img/ban_img.png" alt="" style="width: 295px; height: 180px; margin: auto;">
             </div>
+            <button class="btn">DISCOVER NOW</button>
+            <button class="left-arrow"><</button>
+            <button class="right-arrow">></button>
         </div>
     </div>
 </body>
