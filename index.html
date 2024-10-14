@@ -8,8 +8,10 @@
         * {
             margin: 0;
         }
-        body {
-            background-color:rgb(24, 9, 78)
+        .main {
+            background: size 100%;;
+            background-color:rgb(24, 9, 78);
+            padding: 30px;
         }
         .inner-box {
             height: 640px;
@@ -50,7 +52,7 @@
         }
         .tag-line {
             width: 50%;
-            margin: 100px 50px;
+            margin: 70px 50px;
         }
         .tag-line h1 {
             font-size: 50px;
@@ -77,8 +79,9 @@
             margin-left: 46px;
             
         }
-        .btn button:hover {
+        .inner-box .btn:hover {
             background-color: rgb(230, 184, 73);
+            border: 0;
         }
         .left-arrow {
             border-radius: 50%;
@@ -98,7 +101,109 @@
             
 
         }
+        .inner-box .left-arrow:hover {
+            border: 1px solid rgb(24, 9, 78);
+            color: rgb(24, 9, 78);
+        }
+        .inner-box .right-arrow:hover {
+            border: 1px solid rgb(24, 9, 78);
+            color: rgb(24, 9, 78);
+        }
+
+        .second-page {
+            display: flex;
+            height: 100vh;
+            
+        }
+        .second-page img {
+            width: 500px;
+            height: 400px;
+            margin: auto 50px;
+        }
+        .second-page-content {
+            /* display: flex; */
+            width: 600px;
+            /* height: 500px; */
+            /* padding-top: 200px; */
+            margin-top: 100px !important;
+            margin-left: 100px;
+            
+            
+            
+        }
+        .btn-read {
+            background-color: rgb(24, 9, 78);
+            width: 120px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        .second-page-content h3 {
+            margin-top: 100px ;
+
+        }
+        .third {
+            background-color: rgb(24, 9, 78);
+            height: 100vh;
+        }
+        .third h3 {
+            color: rgb(230, 184, 73);
+            margin-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            
+        }
+        .third h1 {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 50px;
         
+        }
+        .services {
+            display: flex;
+            /* border: 1px solid white; */
+        }
+        .service1 {
+            height: 400px;
+            width: 320px;
+            /* border: 1px solid black; */
+            color: white;
+            margin-top: 30px;
+            margin-left: 30px;
+            text-align: center;
+
+        }
+      
+        .service1 button {
+            color: white;
+            background-color: rgb(24, 9, 78);
+            border: 1px solid white;
+            width: 130px;
+            height: 40px;
+            border-radius: 4px;
+            /* padding: auto; */
+        }
+        .service1 h1 {
+            /* text-align: center; */
+            margin-bottom: 10px;
+        }
+        .service1 p {
+            /* text-align: center; */
+            margin-bottom: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .service1 img {
+            margin: 0 auto;
+        }
+        
+        .service1:hover .hover-heading {
+            color: rgb(230, 184, 73);
+        }
+        .service1:hover .hover-btn {
+            border: 1px solid rgb(230, 184, 73);
+        }
 
     </style>
 </head>
@@ -128,6 +233,61 @@
             <button class="left-arrow"><</button>
             <button class="right-arrow">></button>
         </div>
+ 
     </div>
+    <!-- second page -->
+    <div class="second-page">
+        <img src="./img/about.png" alt="">
+        <div class="second-page-content">
+            <h3 style="color: rgb(230, 184, 73);">ABOUT US</h3>
+            <h1>WELCOME TO OUR DIGITALEX</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet, dicta eaque a doloribus maiores! Minima odit eum nobis alias vero assumenda ea, esse quod, tempore, placeat vitae quasi mollitia.</p>
+            <button class="btn-read">READ MORE</button>
+        </div>
+    
+
+    </div>
+    <!-- third page -->
+     <div class="third">
+        <h3>SERVICES</h3>
+        <h1>DECENTRLIZED CRYPTO COINS</h1>
+        <div class="services">
+            <div class="service1">
+                <img src="./img/services_icon1h.png" alt="">
+                <h1 class="hover-heading">Safe & Secure</h1>
+                <p>Introducing most secure pathway in the crypto interface</p>
+                <button class="hover-btn">Read More</button>
+                
+
+            </div>
+            <div class="service1">
+                <img src="./img/services_icon2h.png" alt="">
+                <h1 class="hover-heading">Mobile Apps</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+
+                <button class="hover-btn">Read More</button>
+                
+
+            </div>
+            <div class="service1">
+                <img src="./img/services_icon3h.png" alt="">
+                <h1 class="hover-heading">Wallet</h1>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="hover-btn">Read More</button>
+
+            </div>
+            <div class="service1">
+                <img src="./img/services_icon4h.png" alt="">
+                <h1 class="hover-heading">Experts Support</h1>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                <button class="hover-btn">Read More</button>
+
+
+        </div>
+     </div>
 </body>
 </html>
